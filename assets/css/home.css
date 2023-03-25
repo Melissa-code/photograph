@@ -12,7 +12,6 @@ body {
 h1 {
     font-family: 'Mulish', sans-serif;
     font-size: 40px;
-    font-weight: normal;
     color: #FFFFFF;
 }
 
@@ -26,4 +25,26 @@ h1 {
 
 .home-main {
     height: 65vh;
+}
+
+.footer {
+    height: 15vh;
+}
+
+.nav-link:hover, .footer-link:hover, .fa-brands:hover {
+    color: #47555E!important;
+
+}
+
+
+/*********************************************************************
+media queries 
+**********************************************************************/
+
+/* mobile phones */ 
+
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    .home-main {
+        height: 70vh;
+    }
 }
