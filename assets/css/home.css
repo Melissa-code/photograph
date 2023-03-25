@@ -1,0 +1,29 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.home-bg {
+    background-image: url('../images/ch-cantin.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-main {
+    height: 65vh;
+}
