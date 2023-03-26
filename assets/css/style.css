@@ -11,30 +11,73 @@ body {
     height: 100%;
 }
 
-h1 {
+/* ***** Titles ***** */ 
+
+h1, h2, h3 {
     font-family: 'Mulish', sans-serif;
-    font-size: 40px;
     color: #FFFFFF;
+    font-weight: bold;
 }
 
-.home-bg {
-    background-image: url('../images/ch-cantin.jpg');
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+/* ***** Backgrounds ***** */ 
+
+.home-bg, .prices-bg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+}
+
+/* **** Home **** */
+
+.home-bg {
+    background-image: url('../images/ch-cantin.jpg');
+}
+
+/* **** Prices **** */
+
+.prices-bg {
+    background-image: url('../images/camera4.jpg');
 }
 
 .home-main {
     height: 65vh;
 }
 
+
+/* ***** Cards ***** */  
+
+.price-card {
+    background-color: #000000;
+    color: #FFFFFF;
+    opacity: 0.9;
+    -webkit-box-shadow: -1px 1px 30px -11px white;
+    box-shadow: 12px 12px 22px white
+}
+
+
+/* ***** Footer ***** */  
+
 .footer {
     height: 15vh;
 }
 
+
+/* ***** Links ***** */  
+
 .nav-link:hover, .footer-link:hover, .fa-brands:hover {
-    color: #47555E!important;
+    color: #F4B942!important;
 
 }
 
@@ -46,7 +89,15 @@ h1 {
 /* mobile phones */ 
 
 @media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
     .home-main {
         height: 70vh;
     }
+    .prices-bg {
+        background: #000000;
+    }
+  
+  
 }
