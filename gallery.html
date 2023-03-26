@@ -43,11 +43,150 @@
 
         <!-- Main  -->
 
-        <div class="container gallery-main">
+        <div class="container-fluid gallery-main">
             <main class="row d-flex justify-content-center">
                 <!-- Title -->
                 <section class="col-12 d-flex justify-content-center my-3">
                     <h1 class="text-center">Galerie photos</h1>
+                </section>
+
+                 <!-- Search a category -->
+                 <section class="col-8 col-md-5 search-category d-flex justify-content-center my-4">
+                    <div class="input-group mb-3">
+                        <input type="text" name="category" id="category" class="form-control" placeholder="Recherche par catégorie" aria-label="category" >
+                    </div>
+                </section>
+
+                <!-- Gallery -->
+                <section class="col-12 my-4">
+                    <div class="row justify-content-center photos-bg">
+                        <div class="col-md-11  ">
+                            <div class="row  mb-3 text-light">
+                                <!-- Categories -->
+                                <div class="col-12 d-flex justify-content-center flex-wrap categories">
+                                    <h2 class="mx-3">Mariage</h2>
+                                    <h2 class="mx-3">Grossesse</h2>
+                                    <h2 class="mx-3">Bébé</h2>
+                                    <h2 class="mx-3">Famille</h2>
+                                    <h2 class="mx-3">Baptême</h2>
+                                    <h2 class="mx-3">Couple</h2>
+                                    <h2 class="mx-3">Portrait</h2>
+                                </div>
+                            </div>
+                            <!-- Wedding -->
+                            <div class="row mb-3">
+                                <a href="uploads/wedding1.png" data-toggle="lightbox" data-gallery="example-gallery" class="img-gallery col-sm-3">
+                                    <img src="uploads/wedding1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/wedding2.png" data-toggle="lightbox" data-gallery="example-gallery" class="img-gallery col-sm-3">
+                                    <img src="uploads/wedding2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/wedding3.png" data-toggle="lightbox" data-gallery="example-gallery" class="img-gallery col-sm-3">
+                                    <img src="uploads/wedding3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/wedding4.png" data-toggle="lightbox" data-gallery="example-gallery" class="img-gallery col-sm-3">
+                                    <img src="uploads/wedding4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <!-- Pregnant -->
+                            <div class="row mb-3">
+                                <a href="uploads/grossesse1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/grossesse1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/grossesse2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/grossesse2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/grossesse3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/grossesse3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/grossesse4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/grossesse4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <!-- Baby -->
+                            <div class="row mb-3">
+                                <a href="uploads/bebe1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bebe1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/bebe2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bebe2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/bebe3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bebe3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/bebe4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bebe4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <!-- Couple -->
+                            <div class="row mb-3">
+                                <a href="uploads/couple1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/couple1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/couple2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/couple2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/couple3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/couple3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/couple4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/couple4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <!-- Baptism -->
+                            <div class="row mb-3">
+                                <a href="uploads/bapteme1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bapteme1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/bapteme2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bapteme2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/bapteme3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bapteme3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/bapteme4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/bapteme4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <!-- Family -->
+                            <div class="row mb-3">
+                                <a href="uploads/famille1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/famille1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/famille2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/famille2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/famille3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/famille3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/famille4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/famille4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <!-- Portrait -->
+                            <div class="row mb-3">
+                                <a href="uploads/portrait1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/portrait1.png" alt="portfolio image 1" class="img-fluid">
+                                </a>
+                                <a href="uploads/portrait2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/portrait2.png" alt="portfolio image 2" class="img-fluid">
+                                </a>
+                                <a href="uploads/portrait3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/portrait3.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                                <a href="uploads/portrait4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                                    <img src="uploads/portrait4.png" alt="portfolio image 3" class="img-fluid">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                 </section>
 
             </main>

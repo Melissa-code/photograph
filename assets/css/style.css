@@ -55,7 +55,7 @@ h3 {
 /* **** Gallery **** */
 
 .gallery-bg {
-    background-image: url('../images/canon1.png');
+    background-color: #000000;
 }
 
 .home-main {
@@ -79,15 +79,20 @@ h3 {
     transform: scale(1.1);
 }
 
+.additional-details {
+    font-size: 14px;
+    font-style: italic;
+}
+
 /* ***** Gallery ***** */  
 
-.photos-bg {
+/* .gallery-main {
     padding: 30px 20px 20px 20px;
     background-color: #000000;
     color: #000000;
-    -webkit-box-shadow: 0px 0px 25px 10px #000000; 
-    box-shadow: 0px 0px 25px 10px #000000;
-}
+    -webkit-box-shadow: 0px 5px 20px 0px #FFFFFF;
+    box-shadow: 0px 5px 20px 0px #FFFFFF;
+} */
 
 
 
@@ -119,7 +124,7 @@ h3 {
     .home-main {
         height: 70vh;
     }
-    .prices-bg {
+    .prices-bg, .gallery-bg {
         background: #000000;
     }
   
