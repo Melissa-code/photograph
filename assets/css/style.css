@@ -31,9 +31,10 @@ h3 {
     font-size: 1em;
 }
 
+
 /* ***** Backgrounds ***** */ 
 
-.home-bg, .prices-bg {
+.home-bg, .prices-bg, .gallery-bg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,20 +52,43 @@ h3 {
     background-image: url('../images/camera4.jpg');
 }
 
+/* **** Gallery **** */
+
+.gallery-bg {
+    background-image: url('../images/canon1.png');
+}
+
 .home-main {
     height: 65vh;
 }
 
 
-/* ***** Cards ***** */  
+/* ***** Prices cards ***** */  
 
 .price-card {
     background-color: #000000;
     color: #FFFFFF;
-    opacity: 0.9;
-    -webkit-box-shadow: -1px 1px 30px -11px white;
-    box-shadow: 12px 12px 22px white
+    opacity: 0.9; 
+    -webkit-box-shadow: 0px 5px 20px 0px #FFFFFF;
+    box-shadow: 0px 5px 20px 0px #FFFFFF;
+    position: relative;
+    transition: 0.2s ease-in;
 }
+
+.price-card:hover {
+    transform: scale(1.1);
+}
+
+/* ***** Gallery ***** */  
+
+.photos-bg {
+    padding: 30px 20px 20px 20px;
+    background-color: #000000;
+    color: #000000;
+    -webkit-box-shadow: 0px 0px 25px 10px #000000; 
+    box-shadow: 0px 0px 25px 10px #000000;
+}
+
 
 
 /* ***** Footer ***** */  
