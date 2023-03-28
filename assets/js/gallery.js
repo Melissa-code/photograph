@@ -24,18 +24,17 @@ const notFamilyPhotos = [pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos
 const notPortraitPhotos = [pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos, familyPhotos, weddingPhotos]; 
 const allPhotos = [weddingPhotos, pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos, familyPhotos, portraitPhotos];
 
-
 /**
  * Display the photos of a category 
  */
 function showCategory(elements, elementsList, othersElements) {
     for(let i = 0; i < elements.length; i++) {
         // Display the photos of a category 
-        elementsList.firstElementChild; 
+        elementsList.insertBefore(elements[i], elementsList.firstElementChild); 
         elements[i].style.display = "inline-block"; 
+
         // Not display the photos of the others categories 
         for(let i = 0; i < othersElements.length; i++) {
-            //console.log(othersElements[i])
             for(let j = 0; j < othersElements[i].length; j++) {
                 othersElements[i][j].style.display = "none"; 
             }
@@ -149,10 +148,12 @@ function getPhotos() {
     let currentUrl = document.location.href; 
     //console.log(currentUrl); 
 
+    // server url
     if(currentUrl === '') {
         fetch('')
             //.then(res => console.log(res))
             //.then(setPhotosInPage())
+    // local server
     } else {
         fetch('http://127.0.0.1:5500/gallery.html')
             .then(res => console.log(res))
