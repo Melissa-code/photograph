@@ -12,7 +12,7 @@ const pregnantPhotos = document.querySelectorAll('.img-pregnant');
 const babyPhotos = document.querySelectorAll('.img-baby');
 const couplePhotos = document.querySelectorAll('.img-couple');
 const baptismPhotos = document.querySelectorAll('.img-baptism');
-const familyPhotos = document.querySelectorAll('.img-family ');
+const familyPhotos = document.querySelectorAll('.img-family');
 const portraitPhotos = document.querySelectorAll('.img-portrait');
 
 const notWeddingPhotos = [pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos, familyPhotos, portraitPhotos]; 
@@ -22,6 +22,7 @@ const notCouplePhotos = [pregnantPhotos, babyPhotos, weddingPhotos, baptismPhoto
 const notBaptismPhotos = [pregnantPhotos, babyPhotos, couplePhotos, weddingPhotos, familyPhotos, portraitPhotos]; 
 const notFamilyPhotos = [pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos, weddingPhotos, portraitPhotos]; 
 const notPortraitPhotos = [pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos, familyPhotos, weddingPhotos]; 
+const allPhotos = [weddingPhotos, pregnantPhotos, babyPhotos, couplePhotos, baptismPhotos, familyPhotos, portraitPhotos];
 
 
 /**
@@ -53,6 +54,43 @@ function showCategory(elements, elementsList, othersElements) {
             for(let j = 0; j < othersElements[i].length; j++) {
                 othersElements[i][j].style.display = "none"; 
             }
+        }
+    }
+}
+
+/**
+ * Display all the photos 
+ */
+function showAllPhotos(allElements) {
+    for(let i = 0; i < allPhotos.length; i++) {
+        //console.log(othersElements[i])
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            weddingList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
+        }
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            pregnantList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
+        }
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            babyList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
+        }
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            coupleList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
+        }
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            baptismList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
+        }
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            familyList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
+        }
+        for(let j = 0; j < allPhotos[i].length; j++) {
+            portraitList.firstElementChild; 
+            allPhotos[i][j].style.display = "inline-block"; 
         }
     }
 }
@@ -96,6 +134,11 @@ function setPhotosInPage() {
         e.preventDefault();
         showCategory(portraitPhotos, portraitList, notPortraitPhotos);
     })
+    // Click on the All the photos button 
+    document.querySelector('#all').addEventListener('click', (e) => {
+        e.preventDefault();
+        showAllPhotos(allPhotos);
+    })
 }
 
 /**
@@ -116,7 +159,6 @@ function getPhotos() {
             .then(setPhotosInPage())
     }
 }
-
 
 /**
  * Browser loads the HTML content (page & photos) event listener
