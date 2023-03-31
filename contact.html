@@ -44,79 +44,72 @@
         <!-- Main  -->
 
         <div class="container">
-            <div class="row">
-
+            <main class="row">
                 <!-- Title -->
-
-                <section class="title my-3">
+                <section class="my-md-2">
                     <h1 class="text-center">Contact</h1>
                 </section>
 
-                <section class="col-12 my-3">
-                    <div class="row d-flex justify-content-center my-md-4">
-
+                <!-- Contact -->
+                <section class="col-12 my-md-2">
+                    <div class="row d-flex justify-content-center my-md-2 mx-1">
                         <!-- Address details -->
-
                         <article class="col-md-5 address-main rounded p-4 m-4">
                             <h2 class="p-3">Studio <br/> Charles Cantin Photographe</h2>
                             <ul class="p-3 list-unstyled mt-3">
                                 <li>10 rue Réaumur</li>
+                                <li>Bâtiment A - 6e étage droite</li>
                                 <li>75003 Paris</li>
                                 <li class="mt-4">
                                     <i class="fa-solid fa-mobile-screen-button fa-lg" style="color: #ffffff;"></i>
-                                    <span class="">06.44.34.65.78</span> 
+                                    <span>06.44.34.65.78</span> 
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                                    <span>cc-photographe@gmail.com</span> 
+                                    <span>cantinphotographe@gmail.com</span> 
                                 </li>
                                 <li class="mt-5">
-                                    <button type="button" class="btn send-btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Voir sur la carte</button>
+                                    <button type="button" class="btn custom-btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Voir sur la carte</button>
                                 </li>
                             </ul>
                         </article>
-
                         <!-- Contact form -->
-
                         <article class="col-md-5 contact-form rounded p-4 m-4">
                             <h2 class="p-3">Formulaire de contact</h2>
-                            <form action="https://formspree.io/f/xoqzkwdy" method="post">
+                            <form action="https://formspree.io/f/xoqzkwdy" method="post" class="p-3">
                                   <!-- Lastname -->
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="lastname" name="lastname">Nom :</span>
                                     <input type="text" class="form-control" aria-label="lastname" aria-describedby="lastname">
                                 </div>
-                    
                                 <!-- Firstname -->
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="firstname" name="firstname">Prénom :</span>
                                     <input type="text" class="form-control" aria-label="firstname" aria-describedby="firstname">
                                 </div>
-                                  
                                 <!-- Email -->
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="email" name="email">Email :</span>
                                     <input type="email" class="form-control"  aria-label="email" aria-describedby="email">
                                 </div>
-                                
                                 <!-- Message -->
                                 <div class="input-group">
                                     <span class="input-group-text" id="message" name="message">Message :</span>
                                     <textarea class="form-control" aria-label="message"></textarea>
                                 </div>
-
-                                <button class="btn send-btn mt-3 w-100" type="submit">Envoyer</button>
+                                <!-- Button -->
+                                <button class="btn custom-btn mt-3 w-100" type="submit">Envoyer</button>
                             </form>
                         </article>
                     </div>
                 </section>
-            </div>
+            </main>
         </div>
 
         <!-- Footer  -->
 
         <div class="container">
-            <footer class="py-3 my-4 border-top border-dark">
+            <footer class="py-3 my-5 border-top border-dark">
                 <div class="row mt-4">
                     <div class="col-12 ">
                         <!-- Copyright & legal notice -->
@@ -126,7 +119,7 @@
             </footer>
         </div>
 
-        <!-- Modal -->
+        <!-- Modal for the location of the studio -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -134,15 +127,16 @@
                         <h5 class="modal-title">Localisation du studio :</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5553884255796!2d2.34831941545217!3d48.86668810807672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1753aa47c5%3A0x4d8b42bb419c30c3!2sRue%20R%C3%A9aumur%2C%20Paris!5e0!3m2!1sfr!2sfr!4v1680258540491!5m2!1sfr!2sfr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="modal-body d-flex justify-content-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.643877740468!2d2.356902615452135!3d48.865000908195725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e0575cbf20b%3A0x47e023677504331a!2s10%20Rue%20R%C3%A9aumur%2C%2075003%20Paris!5e0!3m2!1sfr!2sfr!4v1680263025509!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn send-btn" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Fermer</button>
                     </div>
                 </div>
             </div>
           </div>
+          
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     

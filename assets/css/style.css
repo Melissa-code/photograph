@@ -32,7 +32,7 @@ h3 {
 }
 
 
-/* ***** Backgrounds ***** */ 
+/* ***** Backgrounds of the pages ***** */ 
 
 .home-bg, .prices-bg, .gallery-bg, .contact.bg {
     background-repeat: no-repeat;
@@ -43,13 +43,13 @@ h3 {
 /* **** Home **** */
 
 .home-bg {
-    background-image: url('../images/ch-cantin.jpg');
+    background-image: url('../images/home.png');
 }
 
 /* **** Prices **** */
 
 .prices-bg {
-    background-image: url('../images/camera4.jpg');
+    background-image: url('../images/prices.png');
 }
 
 /* **** Gallery **** */
@@ -67,7 +67,6 @@ h3 {
 .home-main {
     height: 65vh;
 }
-
 
 
 /* ***** Prices cards ***** */  
@@ -108,7 +107,7 @@ h3 {
     transform: scale(1.1);
 }
 
-/* ***** Address ***** */  
+/* ***** Contact ***** */  
 
 .address-main {
     background-color: #000000;
@@ -125,8 +124,6 @@ h3 {
     transform: scale(1.1);
 }
 
-/* ***** Contact form ***** */  
-
 .contact-form {
     background-color: #47555E;
     color: #FFFFFF;
@@ -142,7 +139,7 @@ h3 {
     transform: scale(1.1);
 }
 
-.send-btn {
+.custom-btn {
     background-color: #000000;
     opacity: 1;
     color: #FFFFFF;
@@ -151,10 +148,9 @@ h3 {
     box-shadow: 0px 5px 10px 0px #FFFFFF;
 }
 
-.send-btn:hover {
+.custom-btn:hover {
     background-color: #F4B942;
 }
-
 
 
 /* ***** Footer ***** */  
@@ -163,14 +159,12 @@ h3 {
     height: 15vh;
 }
 
-
 /* ***** Links ***** */  
 
 .nav-link:hover, .footer-link:hover, .fa-brands:hover {
     color: #F4B942!important;
 
 }
-
 
 /*********************************************************************
                         Media queries 
@@ -188,9 +182,8 @@ h3 {
     .home-main {
         height: 70vh;
     }
-    .prices-bg, .gallery-bg {
+    .prices-bg, .gallery-bg, .contact-bg {
         background: #000000;
     }
-  
   
 }
