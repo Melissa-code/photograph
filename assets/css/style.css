@@ -34,7 +34,7 @@ h3 {
 
 /* ***** Backgrounds ***** */ 
 
-.home-bg, .prices-bg, .gallery-bg {
+.home-bg, .prices-bg, .gallery-bg, .contact.bg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -58,9 +58,16 @@ h3 {
     background-color: #000000;
 }
 
+/* **** Contact **** */
+
+.contact-bg {
+    background-image: url('../images/contact.png');
+}
+
 .home-main {
     height: 65vh;
 }
+
 
 
 /* ***** Prices cards ***** */  
@@ -100,6 +107,27 @@ h3 {
 .category:hover {
     transform: scale(1.1);
 }
+
+/* ***** Address ***** */  
+
+.address-main {
+    background-color: #000000;
+    color: #FFFFFF;
+    opacity: 0.9; 
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 0px #FFFFFF;
+    box-shadow: 0px 5px 10px 0px #FFFFFF;
+    position: relative;
+    transition: 0.2s ease-in;
+}
+
+.address-main:hover {
+    transform: scale(1.1);
+}
+
+
+/* ***** Contact form ***** */  
+
 
 
 /* ***** Footer ***** */  
