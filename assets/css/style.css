@@ -125,9 +125,35 @@ h3 {
     transform: scale(1.1);
 }
 
-
 /* ***** Contact form ***** */  
 
+.contact-form {
+    background-color: #47555E;
+    color: #FFFFFF;
+    opacity: 0.9; 
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 0px #FFFFFF;
+    box-shadow: 0px 5px 10px 0px #FFFFFF;
+    position: relative;
+    transition: 0.2s ease-in;
+}
+
+.contact-form:hover {
+    transform: scale(1.1);
+}
+
+.send-btn {
+    background-color: #000000;
+    opacity: 1;
+    color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 0px #FFFFFF;
+    box-shadow: 0px 5px 10px 0px #FFFFFF;
+}
+
+.send-btn:hover {
+    background-color: #F4B942;
+}
 
 
 /* ***** Footer ***** */  

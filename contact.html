@@ -51,10 +51,11 @@
                 </section>
 
                 <section class="col-12 my-3">
-                    <div class="row d-flex justify-content-center">
+                    <div class="row d-flex justify-content-center my-md-4">
 
-                        <!-- Address -->
-                        <article class="col-md-6 address-main rounded p-4">
+                        <!-- Address details -->
+
+                        <article class="col-md-5 address-main rounded p-4 m-4">
                             <h2 class="p-3">Studio Charles Cantin Photographe</h2>
                             <ul class="p-3 list-unstyled mt-3">
                                 <li>10 rue Principale</li>
@@ -71,8 +72,37 @@
                         </article>
 
                         <!-- Contact form -->
-                        <article class="col-md-6 d-flex justify-content-center rounded p-4">
-                                        
+
+                        <article class="col-md-5 contact-form rounded p-4 m-4">
+                            <h2 class="p-3">Formulaire de contact</h2>
+                            <form action="" method="post">
+                                  <!-- Lastname -->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="lastname" name="lastname">Nom :</span>
+                                    <input type="text" class="form-control" aria-label="lastname" aria-describedby="lastname">
+                                </div>
+                    
+                                <!-- Firstname -->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="firstname" name="firstname">Prénom :</span>
+                                    <input type="text" class="form-control" aria-label="firstname" aria-describedby="firstname">
+                                </div>
+                                  
+                                <!-- Email -->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="email" name="email">Email :</span>
+                                    <input type="email" class="form-control"  aria-label="email" aria-describedby="email">
+                                </div>
+                                
+                                <!-- Message -->
+                                <div class="input-group">
+                                    <span class="input-group-text" id="message" name="message">Message :</span>
+                                    <textarea class="form-control" aria-label="message"></textarea>
+                                </div>
+
+                                <button class="btn send-btn mt-3 w-100" type="submit">Envoyer</button>
+                            </form>
+
                         </article>
                     </div>
 
